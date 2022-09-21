@@ -1,40 +1,18 @@
 public class Human {
-    Human(int yearOfBirth, String name, String town) {
+    Human(int yearOfBirth, String name, String town, String job) {
         this.yearOfBirth = yearOfBirth;
         this.name = name;
         this.town = town;
+        this.job = job;
     }
 
     private int yearOfBirth;
     private String name;
     private String town;
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setTown(String town) {
-        this.town = town;
-    }
-
-    public void setYearOfBirth(int yearOfBirth) {
-        this.yearOfBirth = yearOfBirth;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getYears() {
-        return yearOfBirth;
-    }
-
-    public String getTown() {
-        return town;
-    }
+    private String job;
 
     void sayHello() {
         System.out.println("Привет! Меня зовут " + name + ". Я из города " + town + ". Я родился в " + yearOfBirth +
-                " году. Будем знакомы!");
+                " году. Я работаю на должности " + job + ".  Будем знакомы!");
     }
 }
