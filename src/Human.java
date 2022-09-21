@@ -1,10 +1,26 @@
 public class Human {
     Human(int yearOfBirth, String name, String town, String job) {
+        if (yearOfBirth <= 0) {
+            System.out.println("неверно указан год рождения");
+        }
         this.yearOfBirth = yearOfBirth;
-        this.name = name;
-        this.town = town;
-        this.job = job;
+        if (name == null) {
+            this.name = "Информация не указана";
+        } else {
+            this.name = name;
+        }
+        if (town == null) {
+            this.town = "Информация не указана";
+        } else {
+            this.town = town;
+        }
+        if (job == null) {
+            this.job = "Информация не указана";
+        } else {
+            this.job = job;
+        }
     }
+
     private int yearOfBirth;
     private String name;
     private String town;
