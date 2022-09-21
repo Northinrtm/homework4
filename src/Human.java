@@ -5,7 +5,6 @@ public class Human {
         this.town = town;
         this.job = job;
     }
-
     private int yearOfBirth;
     private String name;
     private String town;
